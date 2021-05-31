@@ -9,8 +9,7 @@ const bodyRef = document.querySelector('body');
 themeColorSwichControlRef.addEventListener('change', onChangeTheme);
 themeColorSwichControlRef.addEventListener('change', setLocalStorage);
 
-function onChangeTheme(event) {
-  event.preventDefault();
+function onChangeTheme() {
   if (themeColorSwichControlRef.checked) {
     bodyRef.classList.add(Theme.DARK);
     bodyRef.classList.remove(Theme.LIGHT);
